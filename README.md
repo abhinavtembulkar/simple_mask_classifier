@@ -1,2 +1,2 @@
-# simple_mask_detector
+# simple_mask_classifier
 A simple mask detector based on Javascript
