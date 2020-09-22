@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link href="https://getbootstrap.com/docs/4.0/examples/product/product.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-center">
+          <h3 class="text-light">Mask Detector</h3>
+          <a class="nav-link active" href="/">Webcam</a>
+        </div>
+      </nav>
+    
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-dark mr-md-3 pt-0 px-0 pt-md-0 px-md-5 text-center text-white overflow-hidden">
+          <div>
+            <h2 class="display-5">Take a photo !</h2>
+          </div>
+          <div class="bg-dark box-shadow mx-auto" style="width: 100%; height: 100%; border-radius: 21px 21px 21px 21px; border-color: black">
+            <div></div>
+            <video width="448" height="448"></video>
+          </div>
+        </div>
+    
+        <div class="bg-dark mr-md-3 pt-0 px-0 pt-md-0 px-md-5 text-center text-white overflow-hidden">
+          <div>
+            <h2 class="display-5">Output</h2>
+          </div>
+          <div class="bg-dark box-shadow mx-auto" style="width: 100%; height: 100%; border-radius: 21px 21px 21px 21px; border-color: black">
+            <div id="result"></div>
+            <img alt="output image" width="448" height="448" id="ss"/>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex flex-column flex-md-row justify-content-center">
+        <button class="btn btn-primary" style="width:35%">Submit</button>
+      </div>
+      
+      <footer class="container py-5">
+          <div class="inner text-center text-white">
+              <p>Face Mask detector web App 2020</p>
+              <p>Authors: <a href="mailto:abhinavtembulkar@gmail.com">Abhinav Tembulkar</a>, <a href="mailto:anshulsharma2323@gmail.com">Anshul Sharma</a></p>
+          </div>    
+      </footer>
+    </body>
+    <script type="text/javascript" src="model.js"></script>
+    
+</html>
