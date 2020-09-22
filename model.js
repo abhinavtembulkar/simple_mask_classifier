@@ -29,6 +29,7 @@ function imager()
         console.log(ss)
         document.querySelector('button').innerHTML = '<h2>LOADING....</h2>'
         document.querySelector('#result').innerHTML = `<div class='loader'></div>`
+        ss.style.border = ""
     })
 }
 
@@ -64,6 +65,8 @@ async function predictor()
     else output = 'MASK',maxx=face[0]
 
     document.querySelector('#result').innerHTML = `<h2>${output} ${100*maxx} %</h2>`
+
+    ss.style.border = "5px solid blue"
     setTimeout(()=>{
         document.querySelector('button').innerHTML="CLICK !"
     },2000)
